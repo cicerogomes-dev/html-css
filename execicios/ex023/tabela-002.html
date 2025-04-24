@@ -12,15 +12,35 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
 
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
 
@@ -34,16 +54,23 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
+        
         THEAD
+            TR, TD, TH
         TBODY
+            TR, TD, TH
         TFOOT
+            TR, TD, TH
     -->
 
     <Table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,10 +185,24 @@
         </tbody>
         <tfoot>
              <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
              </tr>
         </tfoot>
     </Table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolore sint eveniet eum praesentium magnam? Nisi cupiditate possimus in mollitia rerum fuga nam, nemo modi atque quos ab minus deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum repellendus iure. Mollitia perspiciatis sequi deleniti veniam porro reiciendis praesentium voluptatum rerum deserunt! Fugiat pariatur voluptatem odio veritatis. Harum, minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi dolorum perferendis esse laudantium numquam, laboriosam molestias reprehenderit cumque aliquam, ducimus pariatur vel! Tempora eum, molestiae cumque dolor aliquam sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis id, asperiores ipsa, laborum porro necessitatibus illum ut deserunt, dolor dolorem eveniet voluptates corporis excepturi! Omnis ipsam eum quisquam quis.</p>
 </body>
 </html>
